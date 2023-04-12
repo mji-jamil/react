@@ -10,9 +10,6 @@ const Book = ( props ) => {
 				<p>{title}</p>
 				<h3 style={{ color: 'green' }}> {author} </h3>
 				{children}
-				<p>
-					Lorem, ipsum dolor sit amet, consectrtur adipisicing elit. Odio fugiat qui officials incidunt ullam, a laborum.
-				</p>
 			</div>
 		</>
 	);
