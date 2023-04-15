@@ -1,5 +1,5 @@
 import Book from './components/Book';
-import EvantExamples from './components/EvantExamples';
+// import EvantExamples from './components/EvantExamples';
 import './index.css';
 
 // const MyName = () => <h1>My Name is Jamil</h1>;
@@ -43,6 +43,16 @@ const books = [
 // };
 
 function BookList() {
+	// const someValue = 'shakeAndBake';
+	// const getBook = (id) => {
+	// 	const book = books.find((book) => book.id === id);
+	// 	console.log(book);
+	// };
+
+	// const test = () => {
+	// 	console.log("test function");
+	// }
+
 	return (
 		<>
 			<div className="booklist">
@@ -61,10 +71,11 @@ function BookList() {
 						<Book img={img} title={title} author={author} key={id}/>
 					)
 				})} */}
-				<EvantExamples />
-				{books.map((book) => {
+				{/* <EvantExamples /> */}
+				<h1>Amazon Best Sellers</h1>
+				{books.map((book, index) => {
 					// const { img, title, author, id } = book;
-					return <Book {...book} key={book.id} />;
+					return <Book {...book} key={book.id} number={index + 1} />;
 				})}
 			</div>
 		</>

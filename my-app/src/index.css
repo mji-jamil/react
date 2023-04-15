@@ -27,7 +27,7 @@ body {
 	width: 90vw;
 	max-width: 1170px;
 	margin: 5rem auto;
-	display: inline-block;
+	display:inline-block;
 	gap: 2rem;
 }
 
@@ -36,10 +36,32 @@ body {
 	/* height: 50%; */
 	height: 300px;
 	object-fit: cover;
+	position: relative;
 }
 
 @media screen and (min-width: 768px) {
 	.booklist {
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+
+.number {
+	position: absolute;
+	left: 40px;
+	/* top: 0; */
+	padding: 0.75rem;
+	border-top-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background: rgb(19, 137, 176);
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 4rem;
+	text-transform: capitalize;
+}
+
+h3 {
+	color: rgb(15, 89, 113);
 }
